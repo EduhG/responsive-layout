@@ -1,0 +1,132 @@
+html, body {
+    background: #ecf0f1;
+    height: 100%;
+    width: 100%;
+    margin:0;
+	padding:0;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, li, a {
+    padding: 0;
+    margin: 0;
+    color: #ecf0f1;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+#container {
+	display: table;
+    width: 100%;
+    min-height: 100%;
+}
+
+#header, #content, #footer {
+    display: table-row;
+    padding: 100px;
+}
+
+#header-wrapper, #content-wrapper, #footer-wrapper {
+    min-height: 100%;
+    border: 2px solid black;
+    overflow: auto;
+    margin: 0 5px;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.fill-header-wrapper, .fill-content-wrapper, .fill-footer-wrapper {
+    position: relative;
+    min-height: 100;
+    margin: 0 auto;
+    align-items: stretch;
+    width: 100%;
+    margin: 10px;
+}
+
+/*....................................................................................................................
+
+Responsive Grid Section
+
+....................................................................................................................*/
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    /* Removes padding behaviour on widths */
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+ 
+/* Attribute selector */
+[class*='col-'] {
+  float: left;
+  padding: 10px;
+}
+ 
+/* Floats last ".bit-" to the right */
+[class*='col-']:last-of-type {
+  padding-right: 10px;
+  float: right;
+}
+ 
+/* Clearfix */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/*....................................................................................................................
+
+Header Section
+
+....................................................................................................................*/
+
+#header {
+	width:100%;
+	height:200px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*....................................................................................................................
+
+Content Section
+
+....................................................................................................................*/
+
+#content {
+    min-height: 100%;
+    overflow: auto;
+}
+
+
+/*....................................................................................................................
+
+Footer Section
+
+....................................................................................................................*/
+
+#footer {
+    height: 0px;
+    border-top: 5px solid #110033 !important;
+    width: 100%;
+    background: #3584B5;
+    color: #fff;
+}

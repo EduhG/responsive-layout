@@ -81,11 +81,15 @@ Responsive Grid Section
   float: right;
 }
  
+.row {
+    width: 100%;
+}
+
 /* Clearfix */
 .row:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: block;
+    clear: both;
 }
 
 /* Main Widths */
